@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<body id="fondo">
+    <div>
+<h1>Que se puede hacer con JavaScript?</h1>
+<p id="demo">JavaScript puede cambiar el contenido de HTML
+</p>
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = 'Hola JavaScript!'">
+Oprime AQUI!</button>
+</div>
+
+<div>
+<h2>JavaScript puede cambiar imagenes</h2>
+<img id="myImage" onclick="changeImage()" src="pc1.jpg
+width="100" height="180">
+<p>Presina AQUI para cambiar la imagen</p>
+<script>
+function changeImage() {
+var image = document.getElementById('myImage');
+if (image.src.match("pc2")) {
+image.src = "pc1.jpg";
+} else {
+image.src = "pc2.jpeg"; } }
+</script>
+</div>
+
+<div>
+<h3>Que se puede hacer con JavaScript?</h3>
+<p id="demo1">JavaScript puede cambiar el estilo de un element de HTML
+</p>
+<button type="button" onclick="myFunction()">Click Me!</button>
+<script>
+function myFunction() {
+var x = document.getElementById("demo1");
+x.style.fontSize = "25px";
+x.style.color = "red";
+}
+</script>
+</div>
+
+
+<script>
+    document.write('<h1>HolaMundo</h1>');
+</script>
+
+<script>
+    window.alert("Me encanta que estes en el curso."); 
+</script>
+
+<p id="p1">.</p>
+<p id="p2">.</p>
+<script>
+document.getElementById('p1').innerHTML = Date();
+document.getElementById('p2').innerHTML = 'Me gusto CSS';
+</script>
+
+<button type="button" Onclick =
+"document.getElementById('p2').innerHTML = 'JavaScript tambi&eacute;n.'">OK
+</button> 
+
+<script> function alegrar()
+    { var x = document.getElementById("p1");
+    x.style.fontSize = "25px";
+    x.style.color = "red"; } </script>
+    Agregue un botón para alegrar su texto.
+    <button type="button"
+    onclick="alegrar()">Alegrar.
+</button>
+
+<img id="escudo" width="100px"
+high="100px" src="escudito.png"
+onclick="colorear()">
+
+<script> function colorear() { var
+    imagen =
+    document.getElementById('escudo'); if
+    (imagen.src.match("escudi")) {
+    imagen.src = "escudoUNAM.png"; }
+    else { imagen.src = "escudito.jpg";
+    } }
+</script>
+
+<p>Teclea un n&uacute;mero peque&ntilde;o:</p> 
+    <input type="text" id="numero">
+    <button type="button" onclick="validar()">validar</button>
+    <p id="mensaje"></p>
+
+    <script src="funciones.js"></script>
+
+
+    <p>Escriba un color: </p> 
+    <input type="color" id="color">
+    <button type="button" onclick="validar2()">validar</button>
+    <p id="mensaje2"></p>
+
+    <script src="funciones.js"></script>
+</body>
+</html>
